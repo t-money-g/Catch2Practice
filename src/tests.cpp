@@ -62,9 +62,3 @@ TEST_CASE( "vectors can be sized and resized", "[vector]" ) {
 
 
 }
-
-
-TEST_CASE( "Natural expressions ") {
-
-    CHECK( )
-}

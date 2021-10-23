@@ -19,12 +19,7 @@
 
 #define CATCH_CONFIG_RUNNER
 #include <catch2/catch.hpp>
-#include <string>
-#include <vector>
-#include <algorithm>
 #include <iostream>
-
-#include "empty.h"
 
 
 int main(int argc, char* argv[])
