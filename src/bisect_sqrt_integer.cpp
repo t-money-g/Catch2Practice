@@ -20,3 +20,10 @@ int sqrt(int number) {
 }
 
 
+TEST_CASE("Sqrt of an integer returns the approximate sqrt") {
+   REQUIRE(sqrt(9) == 3);
+   REQUIRE(sqrt(25) == 5);
+   REQUIRE(sqrt(144) == 12);
+
+   REQUIRE(sqrt(0) == 0);
+}
