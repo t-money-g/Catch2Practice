@@ -20,7 +20,20 @@
 #define CATCH_CONFIG_RUNNER
 #include <catch2/catch.hpp>
 #include <iostream>
+#include <string>
+#include "CreditCard.h"
 
+using std::string, std::cout, std::endl;
+using std::cin;
+
+//generic output operator for pairs (limited solution)
+template <typename T1, typename T2>
+std::ostream& operator << (std::ostream& strm, const std::pair<T1,T2>& p)
+{
+    return strm <<"[" << p.first << "," << p.second << "]";
+}
+
+void testCard();
 
 int main(int argc, char* argv[])
 {
@@ -28,7 +41,10 @@ int main(int argc, char* argv[])
     int result = Catch::Session().run(argc, argv);
 #endif
 
-    std::cout << "Good day!" << std::endl;
+    cout << "Good day!" << endl;
+
+    //testCard();
+
 
 #if TESTS_ENABLED == 1
     return result;
