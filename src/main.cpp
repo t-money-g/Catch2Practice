@@ -21,6 +21,11 @@
 #include <catch2/catch.hpp>
 #include <iostream>
 #include <string>
+#include <cstdio>
+#include <cstdint>
+#include <chrono>
+
+#include "Stopwatch.h"
 #include "CreditCard.h"
 
 using std::string, std::cout, std::endl;
@@ -44,7 +49,17 @@ int main(int argc, char* argv[])
     cout << "Good day!" << endl;
 
     //testCard();
-
+    const size_t n = 1'000'000;
+    std::chrono::nanoseconds elapsed;
+    {
+/*        Stopwatch stopwatch{elapsed};
+        volatile double result { 1.23e45 };
+        for (double i = 1; i < n; i++) {
+            result /= i;
+        }*/
+    }
+    auto time_per_division = elapsed.count() / double {n};
+    printf("took %gns per division.", time_per_division);
 
 #if TESTS_ENABLED == 1
     return result;
