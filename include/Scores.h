@@ -4,7 +4,7 @@
 
 #ifndef SCORES_H
 #define SCORES_H
-
+#include "GameEntry.h"
 #include <stdexcept>
 
 class Scores {                      // stores game high scores
@@ -13,7 +13,7 @@ public:
     ~Scores();
     void add(const GameEntry& e);
     GameEntry remove(int i)
-        throw(std::out_of_range);
+        noexcept(false);
 private:
     int maxEntries;
     int numEntries;

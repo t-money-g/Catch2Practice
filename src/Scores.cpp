@@ -31,7 +31,7 @@ void Scores::add(const GameEntry& e) {
     }
 }
 
-GameEntry Scores::remove(int i) throw(std::out_of_range) {
+GameEntry Scores::remove(int i) noexcept(false) {
     if((i < 0) || (i >= numEntries))
         throw std::out_of_range("Invalid index");
     GameEntry e = entries[i];
