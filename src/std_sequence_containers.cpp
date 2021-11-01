@@ -208,4 +208,10 @@ TEST_CASE("std::vector exposes size management methods") {
     REQUIRE(kb_store.capacity() >= 3);
 }
 
+TEST_CASE("OK I forgot the pop back ...") {
+    std::vector<int> v;
+    v.push_back(42);
 
+    std::vector<int> u {1,2,3};
+    v.pop_back();
+}
