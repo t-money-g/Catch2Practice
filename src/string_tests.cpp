@@ -4,9 +4,11 @@
 
 #include <catch2/catch.hpp>
 #include <string>
+#include <iostream>
+
 using std::string;
 
-TEST_CASE("String concat ") {
+TEST_CASE("String operations  ") {
     string s{"a dog"};
     s += " is a dog";
 
@@ -41,6 +43,22 @@ TEST_CASE("String concat ") {
         REQUIRE((s < "is a frog a cat") == false);
     }
 
+    SECTION("Don't forget about string.append")
+    {
+        string sentence{"She"};
+        sentence.append(" Is playing");
+        sentence += " the piano";
+        std::cout << sentence << "\n";
+    }
 
+    SECTION("More concatenation")
+    {
+        string subject{ "She"};
+        string verb {"is playing"};
+        string object {"the piano"};
+
+        string sentence = subject + " " + verb + " " + object + ".";
+        std::cout << sentence << "\n";
+    }
 }
 
