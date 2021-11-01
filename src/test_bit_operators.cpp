@@ -164,3 +164,19 @@ TEST_CASE("HIGH_SPEED flag works but the DIRECT_CONNECT flag does not... why?"){
     REQUIRE((flags & HIGH_SPEED) != 0);
     REQUIRE((flags & DIRECT_CONNECT) !=0);
 }
+
+// processor instructions
+// understanding bitshift operations
+void test_shifting() {
+    int some_number = 100;
+    int result ;
+
+    // multiply by 2;
+    result = some_number * 2; // 200
+
+    result = some_number << 1; // * 2;  // 200
+    result = some_number << 2; // * 4;  // 400
+    result = some_number << 3; // * 8;  // 800
+    result = some_number << 4; // * 16; // 1600
+
+}
