@@ -8,6 +8,7 @@
 #include <utility>
 #include <cstdint>
 #include <iostream>
+#include <unordered_set>
 
 std::array<int, 10> static_array{}; // braced initialization will initialize array with zeroes
 
@@ -192,7 +193,8 @@ TEST_CASE("std::vector emplace methods forwards arguments") {
 
 }
 
-TEST_CASE("std::vector exposes size management methods") {
+TEST_CASE("std::vector exposes size management methods")
+{
     std::vector<std::array<uint8_t, 1024>> kb_store;
     REQUIRE(kb_store.max_size() > 0);
     REQUIRE(kb_store.empty());
@@ -215,15 +217,55 @@ TEST_CASE("std::vector exposes size management methods") {
     REQUIRE(kb_store.capacity() >= 3);
 }
 
-TEST_CASE("OK I forgot the pop back ...") {
+TEST_CASE("OK I forgot the pop back ...")
+{
     std::vector<int> v;
     v.push_back(42);
 
     std::vector<int> u {1,2,3};
     v.pop_back();
 
-    for(auto x: u) {
+    for(auto x: u)
+    {
         std::cout << x << "\n";
     }
 }
 
+// passing an array into a function
+using std::unordered_set;
+using std::array;
+using std::vector;
+
+unordered_set<int> unique(const array<int, 12>& numbers)
+{
+    unordered_set<int> uniqueNumbers;
+    for (auto n : numbers)
+    {
+        uniqueNumbers.insert(n);
+    }
+    return uniqueNumbers;
+}
+
+TEST_CASE("passing arrays into functions")
+{
+    array numbers{1, 2, 42, 8, 0, -7, 2, 4, 10, 2, -100, 5};
+    auto uniqueNumbers = unique(numbers);
+    std::cout << uniqueNumbers.size() << "\n";
+}
+
+unordered_set<int> unique(const vector<int>& numbers)
+{
+    unordered_set<int> uniqueNumbers;
+    for (auto n : numbers)
+    {
+        uniqueNumbers.insert(n);
+    }
+    return uniqueNumbers;
+}
+
+TEST_CASE("passing vectors to functions")
+{
+    vector numbers { 1, 2, 42, 8, 0,-7, 2, 5, 10, 2, 3, -100, 5};
+    auto uniqueNumbers = unique(numbers);
+    std::cout << uniqueNumbers.size() << "\n";
+}
