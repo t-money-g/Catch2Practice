@@ -7,6 +7,7 @@
 #include <vector>
 #include <utility>
 #include <cstdint>
+#include <iostream>
 
 std::array<int, 10> static_array{}; // braced initialization will initialize array with zeroes
 
@@ -214,4 +215,9 @@ TEST_CASE("OK I forgot the pop back ...") {
 
     std::vector<int> u {1,2,3};
     v.pop_back();
+
+    for(auto x: u) {
+        std::cout << x << "\n";
+    }
 }
+

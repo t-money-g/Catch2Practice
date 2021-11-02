@@ -1,12 +1,14 @@
 //
 // Created by tyoun on 10/28/2021.
 //
-
 #include <catch2/catch.hpp>
 #include <set>
 #include <functional>
 #include <unordered_set>
 #include <map>
+#include <iostream>
+
+
 TEST_CASE("std::set supports") {
     std::set<int> emp;
     std::set<int> fib { 1, 1, 2, 3, 5 };
@@ -206,5 +208,19 @@ TEST_CASE("std::map is an associative array with") {
 
 TEST_CASE("std::map supports insert") {
     std::map<const char*, int> pub_year;
-    
+    pub_year.insert(std::pair<const char*, int>("1983", 2));
+    REQUIRE(pub_year.at("1983") == 2);
+}
+
+TEST_CASE("loop through a map?")
+{
+    std::map<std::string, float> fruitPrices {
+            { "Apple", 0.69f },
+            { "Banana", 0.98f },
+            { "Orange", 1.1f },
+    };
+
+    for(auto [fruit, price] : fruitPrices) {
+        std::cout << fruit << " s cost $" << price << ".\n";
+    }
 }
