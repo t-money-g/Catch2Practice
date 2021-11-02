@@ -9,6 +9,7 @@
 #include <cstdint>
 #include <iostream>
 #include <unordered_set>
+#include "../include/print_std_library_containers.h"
 
 std::array<int, 10> static_array{}; // braced initialization will initialize array with zeroes
 
@@ -268,4 +269,24 @@ TEST_CASE("passing vectors to functions")
     vector numbers { 1, 2, 42, 8, 0,-7, 2, 5, 10, 2, 3, -100, 5};
     auto uniqueNumbers = unique(numbers);
     std::cout << uniqueNumbers.size() << "\n";
+}
+
+TEST_CASE("printing container template function")
+{
+    vector vec{1.0f, 2.0f, 3.0f};
+    std::cout << vec << "\n";
+
+}
+
+
+TEST_CASE("printing map template function")
+{
+    std::map<std::string, float> planetDistances
+    {
+        { "Venus", 0.733f },
+        { "Earth", 1.0f},
+        { "Mars", 1.5},
+    };
+
+    std::cout << planetDistances << "\n";
 }
