@@ -96,6 +96,6 @@ TEST_CASE("nullptr fun")
     {
         cout << "we are going to crash " << std::endl;
         pointer = nullptr;
-        cout << *pointer << "\n";
+        //cout << *pointer << "\n";
     }
 }

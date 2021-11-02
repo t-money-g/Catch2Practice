@@ -224,3 +224,23 @@ TEST_CASE("loop through a map?")
         std::cout << fruit << " s cost $" << price << ".\n";
     }
 }
+
+// using std::strin 
+struct ShortestString {
+    bool operator()(const std::string& a, const std::string& b) const {
+        return a.size() <= b.size();
+    }
+};
+
+TEST_CASE("std::map supports sorting") {
+    std::map<std::string, int, ShortestString> shortest_strings {
+        { "The", 3 },
+        { "Quick", 5 },
+        { "Brown", 6 },
+        { "Fox", 3 },
+        { "Jumps", 5 }}; 
+
+    for(auto [word, length] : shortest_strings) {
+        std::cout << word << " is " << length << " characters long.\n";
+    }
+}
