@@ -27,8 +27,6 @@ TEST_CASE("std::array") {
         REQUIRE(local_array[3] == 3);
         REQUIRE(local_array[4] == 0);
     }
-
-
 }
 
 // size_t object guarantees that its maximum value is sufficient to represent
@@ -53,6 +51,14 @@ TEST_CASE("std::array access") {
         std::get<2>(fib) = 2;
         REQUIRE(std::get<2>(fib) == 2);
     }
+
+    SECTION(" sexy fibbers")
+    {
+        std::array fibonacci{1, 1, 2, 3, 5};
+        std::cout << fibonacci[4] << "\n";
+    }
+
+
 }
 
 TEST_CASE("std::array has convienence methods" ) {
