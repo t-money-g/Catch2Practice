@@ -35,6 +35,12 @@ FetchContent_Declare(
 		GIT_TAG			v2.13.1)
 FetchContent_MakeAvailable(Catch2)
 
+#Find boost please!
+find_package(Boost 1.71.0)
+if (Boost_FOUND)
+	include_directories(${Boost_INCLUDE_DIRS})
+endif()
+
 
 # Automatically add all *.cpp and *.h files to the project
 file ( GLOB SOURCES "./src/*.cpp" "./include/*.h" )
