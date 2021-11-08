@@ -13,6 +13,7 @@
 #include <exception>
 #include <iostream>
 
+#include <boost/property_tree/json_parser.hpp>
 
 /* this tutorial uses XML, you can use any supported format (such as INI or JSON).
  * saved in build_dir/debug_settings.xml
@@ -99,4 +100,42 @@ TEST_CASE("debug settings test with property tree")
     {
         std::cout << "Error: " << e.what() << "\n";
     }
+}
+
+
+// From cpp crash course:
+// ptree , default constructible
+// insert elements into a ptree using the put method ... takes a path and an
+// argument . A path is a sequence of one or more nested keys separated by a period(.).
+
+// and a value is an arbitrary typed object .
+// you can get subtrees from a petree using the get_child method, which takes the
+// path of the desired subtree. If the subtree does not have any children( a so called leaf node),
+// you can also use the method template get_value to extract the corresponding value from key-value
+// pair.
+
+// finally, ptree supports serialization and deserialization to several formats including
+// javascript object notation (JSON), window's initialization file format (INI), XML and
+// custom ptree specific format called INFO .
+// for example , to write a ptree into a file in JSON format, you can use boost:property_tree::write_json
+// function from <boost/property_tree/json_parser.hpp> header.
+TEST_CASE("boost::property_tree::ptree stores tree data")
+{
+    using namespace boost::property_tree;
+    ptree p;
+    p.put("name", "finfisher");
+    p.put("year", 2014);
+    p.put("features.process", "LASS");
+    p.put("features.driver", "mssounddx.sys");
+    p.put("features.arch", 32);
+
+    REQUIRE(p.get_child("year").get_value<int>() == 2014);
+
+    const auto file_name = "rootkit.json";
+    write_json(file_name, p);
+
+    ptree p_copy;
+    read_json(file_name, p_copy);
+    REQUIRE(p_copy == p);
+
 }
