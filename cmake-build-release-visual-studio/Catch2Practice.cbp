@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Catch2Practice"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-release-visual-studio\;CMake Files\cmake-build-release-visual-studio\_deps\;CMake Files\cmake-build-release-visual-studio\_deps\catch2-src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Catch2Practice">
+				<Option output="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio/Catch2Practice.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/include"/>
+					<Add directory="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio/_deps/catch2-src/single_include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 Catch2Practice"/>
+					<CompileFile command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Catch2Practice/fast">
+				<Option output="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio/Catch2Practice.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/include"/>
+					<Add directory="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio/_deps/catch2-src/single_include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 Catch2Practice/fast"/>
+					<CompileFile command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f \\wsl$\Ubuntu\home\tmoney\src\Catch2Practice\cmake-build-release-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/include/CreditCard.h">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/include/GameEntry.h">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/include/Scores.h">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/include/Stopwatch.h">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/include/Timer.h">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/include/print_std_library_containers.h">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/CreditCard.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/GameEntry.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/Scores.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/TestCreditCard.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/TestScores.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/a_bit_of_file_io.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/basic_oop_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/bisect_sqrt_integer.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/boost_graph_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/boost_property_tree.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/class_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/good_ole_pointer_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/just_print_it.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/lamb_test.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/main.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/math_problems.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/pair_test.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/pseudo_random_number_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/recursion_test.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/std_algorithm_test.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/std_any_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/std_associative_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/std_optional.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/std_other_sequential_containers.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/std_pair_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/std_sequence_containers.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/string_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/test_bit_operators.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/time_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/src/timer_tests.cpp">
+			<Option target="Catch2Practice"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="//wsl$/Ubuntu/home/tmoney/src/Catch2Practice/cmake-build-release-visual-studio/_deps/catch2-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release-visual-studio\_deps\catch2-src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
